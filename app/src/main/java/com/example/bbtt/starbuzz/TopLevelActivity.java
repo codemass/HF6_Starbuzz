@@ -27,8 +27,8 @@ public class TopLevelActivity extends AppCompatActivity {
             }
         };
 
-        //Добавить слушателя к списковому представлению
+        //Добавить слушателя к ListView
         ListView listView = (ListView) findViewById(R.id.list_options);
-        listView.setOnItemClickListener(itemClickListener); //Добавление слушателя к ListView
+        listView.setOnItemClickListener(itemClickListener);
     }
 }
