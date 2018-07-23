@@ -13,7 +13,7 @@ public class DrinkCategoryActivity extends ListActivity {
         ListView listDrinks = getListView();
         ArrayAdapter<Drink> listAdapter = new ArrayAdapter<Drink>( //ListView заполняется данными из массива drinks класса Drinks.
           this,
-          android.R.layout.simlple_list_item_1,
+          android.R.layout.simple_list_item_1,
           Drink.drinks);
         listDrinks.setAdapter(listAdapter);
     }
