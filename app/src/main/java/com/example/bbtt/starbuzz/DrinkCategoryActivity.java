@@ -26,7 +26,7 @@ public class DrinkCategoryActivity extends ListActivity {
                                  int position,
                                  long id) {
         Intent intent = new Intent (DrinkCategoryActivity.this, DrinkActivity.class); //Вызов DrinkActivity
-        intent.putExtra (DrinkActivity.EXTRA_DRINKNO, (int) id);
+        intent.putExtra (DrinkActivity.EXTRA_DRINKNO, (int) id); //Интент передает дополнительные данные в виде id выбранного варианта из списка, под именем EXTRA_DRINKNO. Передает в DrinkActivity.
         startActivity (intent);
     }
 }

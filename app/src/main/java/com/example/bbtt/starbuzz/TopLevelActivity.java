@@ -22,7 +22,7 @@ public class TopLevelActivity extends AppCompatActivity {
                                      long id) {
                 if (position == 0) { //Drinks - первый вариант в списковом представлении - находится в позиции 0.
                     Intent intent = new Intent(TopLevelActivity.this, DrinkCategoryActivity.class); //Интент выдается TopLevelActivity. Должен запускать DrinkCategoryActivity.
-                    startActivity(intent);
+                    startActivity(intent);//Тут в интенте не передается каких либо значений, просто вызывается другая активити. Конкретно эта строка запускает интент.
                 }
             }
         };
