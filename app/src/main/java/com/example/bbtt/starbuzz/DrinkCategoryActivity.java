@@ -25,7 +25,7 @@ public class DrinkCategoryActivity extends ListActivity {
                                  View itemView,
                                  int position,
                                  long id) {
-        Intent intent = new Intent (DrinkCategoryActivity.this, DrinkActivity.class);
+        Intent intent = new Intent (DrinkCategoryActivity.this, DrinkActivity.class); //Вызов DrinkActivity
         intent.putExtra (DrinkActivity.EXTRA_DRINKNO, (int) id);
         startActivity (intent);
     }
